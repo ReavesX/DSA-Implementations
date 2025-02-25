@@ -51,14 +51,24 @@ struct Node* createNode(int data){
     return temp;
 }
 
+
+// Insert a 
 void insertValue(int data){
-    Node* temp = (struct Node*)malloc(sizeof(struct Node));  // allocate memory for the node & typecast it as a Node
+    struct Node* temp = (struct Node*)malloc(sizeof(struct Node));  // allocate memory for the node & typecast it as a Node
     (*temp).data = value;
-    temp->link = NULL;
+    temp->link = head;
     head = temp;
     
 }
-void printLinkedList();
+void printLinkedList(){
+    struct Node* temp = head;
+    printf("Here is your linked list:\n")
+    while(temp != Null){
+        printf("%d",temp-data);
+        temp = temp->next;
+    }
+    printf("\n")
+}
 
 // implementation basic: 
 
