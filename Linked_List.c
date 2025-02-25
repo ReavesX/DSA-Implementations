@@ -52,7 +52,7 @@ struct Node* createNode(int data){
 }
 
 
-// Insert a 
+// Insert a value into your linked list, creating a node.
 void insertValue(int data){
     struct Node* temp = (struct Node*)malloc(sizeof(struct Node));  // allocate memory for the node & typecast it as a Node
     (*temp).data = value;
@@ -60,6 +60,8 @@ void insertValue(int data){
     head = temp;
     
 }
+
+// print your linked list.
 void printLinkedList(){
     struct Node* temp = head;
     printf("Here is your linked list:\n")
